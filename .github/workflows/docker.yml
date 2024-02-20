@@ -10,7 +10,8 @@ on:
       - published
 jobs:
   docker:
-    if: github.repository == 'axiom-data-science/rsync-server'
+    name: 'Build and push'
+    #if: github.repository == 'axiom-data-science/rsync-server'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
